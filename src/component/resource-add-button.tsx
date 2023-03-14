@@ -8,7 +8,7 @@ export const ResourceAddButton = ({
   return (
     <div
       onClick={onClick}
-      className="flex-grow hover:cursor-pointer radius-[5px] border-[1px] border-solid border-[#E5E5E5] m-1 mr-1"
+      className="flex-grow hover:cursor-pointer radius-[5px] border-[1px] border-solid border-[#E5E5E5] m-1"
     >
       <div className="m-[5%] text-center">{name}</div>
       {children}
