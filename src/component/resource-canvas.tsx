@@ -4,7 +4,7 @@ import { selectedResourceAtom } from "../atom/resources";
 import { ResourceCanvasHeader } from "./resource-canvas-header";
 
 export const ResourceCanvas: React.FC = () => {
-  const [selected, setSelected] = useAtom(selectedResourceAtom);
+  const [selected] = useAtom(selectedResourceAtom);
 
   if (!selected) {
     return <div className="flex flex-1 flex-grow"></div>;
