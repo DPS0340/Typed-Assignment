@@ -10,7 +10,7 @@ Typed Frontend Engineer 기술 과제 제출물입니다.
 
 ### Vercel 배포 환경 사용
 
-[Vercel](https://typed-assignment.vercel.app/)에서 배포되어 있는 데모를 확인하실 수 있습니다.
+[Vercel](https://typed-assignment-dps0340.vercel.app/)에서 배포되어 있는 데모를 확인하실 수 있습니다.
 
 
 ### 로컬 개발 환경 구성
