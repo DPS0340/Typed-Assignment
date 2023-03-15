@@ -5,7 +5,7 @@ export const ActionIcon = (params: ActionIconParams) => {
   const { onClick, className } = params;
   return (
     <div onClick={onClick} className={className}>
-      <TypedIcon color={TypedColor.fromHex("#000000")} {...params} />
+      <TypedIcon {...params} />
     </div>
   );
 };
