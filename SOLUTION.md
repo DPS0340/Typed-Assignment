@@ -18,6 +18,14 @@
 
 - TypeScript
     - 기존 JavaScript에서 개발하면서 생기는 런타임 에러를 상당수 방지할 수 있고, 기존 자바스크립트 코드를 그대로 사용하며 점진적으로 TypeScript만의 기능을 추가할 수 있어서 러닝 커브 요구치가 낮다고 생각되어 도입했습니다.
+- React 18
+    - [React](https://reactjs.org/)를 사용하는 두 가지 이유는 반응성 유지와, 컴포넌트를 이용한 코드 재사용을 위해서입니다.
+        1. 반응성이란 것은 쉽게 말하면 데이터가 바뀌면 화면도 바뀌는 개념을 의미합니다. 기존 jQuery나 JavaScript DOM API에서는 재렌더링 과정이 명시적으로 상태 관리와 연동되어 동작하지 않았기 때문에 개발자가 명시적으로 콜백 함수등을 통해 데이터가 갱신된 이후에 DOM 갱신을 직접 구현해야 했고, 이것은 생산성 저하와 사용자에게 좋지 않은 경험을 줄 수 있습니다. 이런 문제를 피하기 위해서 React는 useState 훅을 제공함으로써 상태 변화시 자체적으로 데이터 갱신을 처리합니다. React 내부에서 단순히 컴포넌트를 다시 렌더링함으로써 구현할 수 있습니다. 조금 더 알아보시고 싶으시다면, 다음 문서들을 참고하세요.
+            - [https://reactjs.org/docs/reconciliation.html](https://reactjs.org/docs/reconciliation.html)
+            - [https://github.com/acdlite/react-fiber-architecture](https://github.com/acdlite/react-fiber-architecture)
+        2. 컴포넌트를 이용한 코드 재사용은 기존의 프론트엔드 라이브러리에서 제공해주지 않던 개념이었습니다. 저희는 Function Component를 사용하겠습니다. Class Component의 작동 원리인 Life Cycle은 프론트엔드 개발자를 혼란시키고, 생각으로 작동을 예상하는 것이 어려워 직관적이지 않습니다. FC에서 제공하는 Hooks를 사용하여 기본 공리를 조합하고 이용함으로써 수많은 비즈니스 로직을 작성할 수 있습니다. 기본 React Hooks의 목록과 상세 사항을 알아보시고 싶으시다면, 다음 문서를 참고하세요.
+            - [https://reactjs.org/docs/hooks-intro.html](https://reactjs.org/docs/hooks-intro.html)
+    - 물론 이 두 가지 요소는 대부분의 모던 프론트엔드 프레임워크들이 제공하는 요소기도 합니다. 수많은 프레임워크중 React를 선택한 가장 큰 이유는, 프론트엔드 개발자들이 사랑하고 가장 인기를 끄는 프레임워크이기 때문입니다. [Stack Overflow 2021 Developer Survey](https://insights.stackoverflow.com/survey/2021)에서 React는 Web framework 분야중 1위를 차지했습니다.
 - pnpm
     - 기존에는 Yarn PnP를 사용했지만, pnpm이 더 disk efficient하며 성능이 좋고, Yarn PnP와 다르게 TypeScript SDK를 별도로 세팅할 필요가 없어서 선택하게 되었습니다.
 - Prettier
