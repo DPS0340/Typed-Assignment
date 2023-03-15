@@ -31,7 +31,7 @@
 - Prettier
     - 대규모 프로젝트의 경우에는 ESLint 기반으로 일원화한 다음, [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier)를 사용해서 Prettier의 기능을 통합하는 것이 좋지만, 이번 과제를 진행함에 있어서 개발 툴체인 작업보다는 순수 개발을 하는 작업에 집중하는 비율이 많을 것이다, 혹은 많아야 한다고 생각되어, Linter / Formatter로는 단순히 tsc와 Prettier만 사용했습니다.
 - Vite
-    - [Create React App](https://create-react-app.dev/)는 기본 세팅으로 퍼포먼스 문제가 큰 Babel을 사용하고 있고, devDepenDencies와 dependencies를 구분하지 않아서 좋지 못한 설계를 가진 라이브러리라고 생각합니다.
+    - [Create React App](https://create-react-app.dev/)는 기본 세팅으로 퍼포먼스 문제가 큰 Babel을 사용하고 있고, devDependencies와 dependencies를 구분하지 않아서 좋지 못한 설계를 가진 라이브러리라고 생각합니다.
     - 이에 비해 Vite는 Webpack을 대체하는 번들러 및 개발 서버의 역할을 하는 툴이면서, 제공하고 있는 Template의 완성도가 높아 사용하게 되었습니다.
 - Jotai
     - 전역 상태 관리는 여전히 프론트엔드 생태계에서 중요한 토픽이라고 생각하고 있습니다.
