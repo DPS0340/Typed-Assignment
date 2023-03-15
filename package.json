@@ -12,10 +12,13 @@
     "@emotion/core": "^10.1.1",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.13",
+    "@types/uuid": "^9.0.1",
     "jotai": "^2.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typed-design-system": "^0.0.228"
+    "typed-design-system": "^0.0.228",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
