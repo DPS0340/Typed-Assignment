@@ -3,4 +3,5 @@ export type Resource = {
   type: "url" | "image";
   name: string;
   url?: string;
+  image?: string;
 };

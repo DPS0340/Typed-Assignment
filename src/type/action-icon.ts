@@ -1,6 +1,5 @@
-import { type IconType } from "typed-design-system/dist/TypedIcon";
+import { TypedIconProps } from "typed-design-system/dist/TypedIcon";
 
 export type ActionIconParams = {
-  icon: IconType;
-  onClick?: () => void;
-};
+  onClick?: (() => void) | ((e: React.MouseEvent<HTMLElement>) => void);
+} & TypedIconProps;
