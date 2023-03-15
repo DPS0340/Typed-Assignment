@@ -13,13 +13,20 @@ export const ResourceCanvas: React.FC = () => {
   let content: JSX.Element;
 
   if (selected.type === "image") {
-    content = <img width="70vw" height="100vh" src={selected.url}></img>;
+    content = (
+      <img
+        className="w-[100%] h-[95vh] object-contain m-auto"
+        src={selected.image}
+      ></img>
+    );
   } else {
-    content = <iframe width="70vw" height="100vh" src={selected.url}></iframe>;
+    content = (
+      <iframe className="w-[100%] h-[95vh] m-auto" src={selected.url}></iframe>
+    );
   }
 
   return (
-    <div className="flex flex-col">
+    <div className="flex-1 flex-grow flex flex-col">
       <ResourceCanvasHeader />
       {content}
     </div>
