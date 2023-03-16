@@ -81,7 +81,7 @@ export const ResourceAddPanel = ({
       <input
         type="text"
         onKeyDown={onEnter(submitUrl)}
-        className={`absolute w-[18.7vw] mt-[4rem] ml-3 mr-auto border border-black rounded-md p-2 ${
+        className={`absolute w-[18.7vw] mt-[4rem] ml-[0.3vw] mr-auto border border-black rounded-md p-2 ${
           !show ? "hidden" : ""
         }`}
         value={url}
@@ -153,7 +153,7 @@ export const ResourceAddPanel = ({
     // https://stackoverflow.com/a/49408555/11853111
     <div
       className={`absolute 
-        w-[18.7vw] mt-[4rem] ml-3 mr-auto
+        w-[18.7vw] mt-[4rem] ml-[0.3vw]
     ${!show ? "hidden" : ""}`}
     >
       <input
